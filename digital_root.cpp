@@ -9,10 +9,10 @@ int digital_root(int n)
 {
 	int cumsum=0;
 	while(n>0)
-    {
-	    	cumsum+= n%10; 
-	    	n=n/10;
-    }	
-	 n=cumsum;
+	{
+		cumsum+= n%10; 
+		n=n/10;
+	}	
+	n=cumsum;
 	return n>=10? digital_root(n):n;
 }
